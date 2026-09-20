@@ -16,7 +16,7 @@
 ### ESP32
 [ESP32-C6 mini](https://www.electrokit.com/upload/quick/19/78/0aa5_41022525-tds.pdf)
 ### Motor
-6V DC motor (TODO)
+[N20 6V DC motor](https://www.mouser.se/en/ProductDetail/Adafruit/4638?qs=DPoM0jnrROX7wl3SzzlDLw%3D%3D)
 ### Motor Controller
 [DRV8833](https://www.ti.com/lit/ds/symlink/drv8833.pdf?ts=1789891025483&ref_url=https%253A%252F%252Fwww.google.com%252F)
 ### IMU
