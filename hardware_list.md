@@ -1,29 +1,37 @@
+# Parts list
 ## Price approximation
 | part | amount | price per piece (SEK)| price total (SEK)|
 |------|--------|-----------------|-------------|
-| ESP32|   2    |     30            | 60            |
+| ESP32 |   1    |     120            | 120            |
 | Motor|   2    |      150           | 300            |
-| Motor Controller|   2    | 30                | 60            |
+| Motor Controller|   x    | x   |  x |
 | IMU |   1    |  95               |     95        |
-| Motor-battery |   2    |     60            |  120           |
-| Micro controller battery (9V)|   1    |   20      |  20       |
+| Motor-battery |   1    |     200            |  200           |
 | DC Voltage Converter for the ESP |1 |20 |20
 | | | |
 | | | |
-|**Sum** | | |675|
+|**Sum** | | |735|
 
 ## Parts Specificaitons
 ### ESP32
-[ESP32-C6 mini](https://www.electrokit.com/upload/quick/19/78/0aa5_41022525-tds.pdf)
+[ESP32-S3](https://www.amazon.se/-/en/ESP32-S3-WROOM-1-N16R8-ESP32-S3-DevKitC-1-Development-Board/dp/B0FYFF8CB2/ref=sr_1_5?sr=8-5)
 ### Motor
-[N20 6V DC motor](https://www.mouser.se/en/ProductDetail/Adafruit/4638?qs=DPoM0jnrROX7wl3SzzlDLw%3D%3D)
+[N20 6V DC motor](https://www.electrokit.com/en/dc-motor-with-gearbox-12vdc-1-150-200rpm-with-encoder)
 ### Motor Controller
-[DRV8833](https://www.ti.com/lit/ds/symlink/drv8833.pdf?ts=1789891025483&ref_url=https%253A%252F%252Fwww.google.com%252F)
+- (https://www.electrokit.com/en/motordrivare-l298-dubbel-h-brygga-5-35v-2a) -> but this has only 5V logic
+- or https://www.electrokit.com/en/motordrivare-2-kanal-2.5-13.5v-1.2a
+- or https://www.electrokit.com/en/tbb6612-motordrivare-2-kanal-4.5-13.5v-monterad-pa-kort
 ### IMU
 [BMI160](https://www.bosch-sensortec.com/media/boschsensortec/downloads/datasheets/bst-bmi160-ds000.pdf)
 ### Motor Battery
-Li-Ion 18650 3.7V 2600maH 30A
-### Micro Controller Battery
-Alkaline 9V
+[Lipo 3s 450 mAh](https://www.amazon.se/-/en/450mAh-Battery-Connector-Torrent-Flite/dp/B0714GN73V/ref=sr_1_1?sr=8-1)
+
 ### DC Converter for the ESP
 [LM2596s](https://www.ti.com/lit/ds/symlink/lm2596.pdf)
+
+## What we need to order
+- ESP32
+- Motors
+- Battery
+- IMU
+- Motor Controller
