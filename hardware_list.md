@@ -21,6 +21,7 @@
 [Adafruit driver](https://www.electrokit.com/en/tbb6612-motordrivare-2-kanal-4.5-13.5v-monterad-pa-kort)
 ### IMU
 [BMI160](https://www.bosch-sensortec.com/media/boschsensortec/downloads/datasheets/bst-bmi160-ds000.pdf)
+[(documentation)](https://xpart.org/product/bmi160-6-axis-rate-gyro-gravity-accelerometer-sensor-module/)
 ### Motor Battery
 [Lipo 3s 450 mAh](https://www.amazon.se/-/en/450mAh-Battery-Connector-Torrent-Flite/dp/B0714GN73V/ref=sr_1_1?sr=8-1)
 
