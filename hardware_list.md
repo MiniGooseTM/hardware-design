@@ -14,7 +14,7 @@
 
 ## Parts Specificaitons
 ### ESP32
-[ESP32-S3](https://www.amazon.se/-/en/ESP32-S3-WROOM-1-N16R8-ESP32-S3-DevKitC-1-Development-Board/dp/B0FYFF8CB2/ref=sr_1_5?sr=8-5)
+[ESP32-S3](https://www.amazon.se/-/en/ESP32-S3-WROOM-1-N16R8-ESP32-S3-DevKitC-1-Development-Board/dp/B0FYFF8CB2/ref=sr_1_5?sr=8-5) ([documentation](https://docs.espressif.com/projects/esp-dev-kits/en/latest/esp32s3/esp32-s3-devkitc-1/user_guide_v1.1.html#hardware-reference))
 ### Motor
 [N20 6V DC motor](https://www.electrokit.com/en/dc-motor-with-gearbox-12vdc-1-150-200rpm-with-encoder)
 ### Motor Controller
