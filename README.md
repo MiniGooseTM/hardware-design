@@ -1,4 +1,9 @@
 # MiniGoose hardware design
+
+<p align="center">
+  <img src="docs/imgs/goose.gif" alt="Animation of the MiniGoose robot assembling in Fusion 360" width="480">
+</p>
+
 This repo contains the mechanical and electrical design of the **MiniGoose** robot. 
 **MiniGoose** (also named **Ryan the Gosling**) is a 2-wheel differential drive balancing robot, which uses wheel encoders and IMU to stay upright and follow velocity commands.
 The robot is controlled by an onboard PPO policy, which outputs the PWM motor controls.
