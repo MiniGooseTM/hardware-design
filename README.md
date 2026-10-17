@@ -31,6 +31,20 @@ The robot is built from 2 N20 DC motors, wheel encoders, IMU, ESP-32, a battery,
 └── README.md
 ```
 ## Electrical design
+The schematic and PCB layout are in the KiCad project under `/wheel_robot_kicad`.
+
+The robot is built around an **ESP32-S3-DevKitC-1**, which connects to:
+- **BMI160 IMU** over I2C, with 6.8k pull-up resistors on SCL and SDA.
+- **TB6612FNG dual motor driver**, which drives the two N20 motors (`AM1/AM2`, `BM1/BM2`) using PWM and direction signals from the ESP32.
+- **Wheel encoders** directly mounted to the N20 motors, with channels `AC1/AC2` and `BC1/BC2` on GPIOs and power from the ESP32's 3.3 V rail.
+
+Power comes from a **450 mAh 3S LiPo** (11.1 V). The battery feeds the motor driver's VM pins directly, and a step-down converter supplies the logic voltage.
+A voltage divider (100k / 22k with a 100 nF filter capacitor) scales the battery voltage down to an ESP32 ADC pin so the battery level can be monitored.
+
+<p align="center">
+  <img src="docs/imgs/electrical_design.png" alt="KiCad schematic of the MiniGoose electronics" width="800">
+</p>
+
 ## Mechanical design
 This section describes the mechanical design of the robot, how to 3D print the parts, and how to export it to MuJoCo `.xml` file.
 
