@@ -3,7 +3,7 @@ This repo contains the mechanical and electrical design of the **MiniGoose** rob
 **MiniGoose** (also named **Ryan the Gosling**) is a 2-wheel differential drive balancing robot, which uses wheel encoders and IMU to stay upright and follow velocity commands.
 The robot is controlled by an onboard PPO policy, which outputs the PWM motor controls.
 
-The robot is built from 2 N20 DC motors, wheel encoders, IMU, ESP-32, a battery, and 3D printed wheels and chassis. For a complete bill of materials, visit [BOM](hardware_list.md).
+The robot is built from 2 N20 DC motors, wheel encoders, IMU, ESP-32, a battery, and 3D printed wheels and chassis. For a complete bill of materials, visit [BOM](bom.md).
 ## Repository structure
 ```
 /hardware-design
@@ -22,7 +22,7 @@ The robot is built from 2 N20 DC motors, wheel encoders, IMU, ESP-32, a battery,
 │   ├── wheel_robot_kicad.kicad_sch # Schematic
 │   └── wheel_robot_kicad.kicad_pcb # PCB layout
 │
-├── hardware_list.md                # Bill of materials with prices and links
+├── bom.md                # Bill of materials with prices and links
 └── README.md
 ```
 ## Electrical design
