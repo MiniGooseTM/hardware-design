@@ -39,7 +39,35 @@ Especially the wheel shaft requires a tight fit to reduce backlash to a minimum 
 
 We also advise splitting the top chassis into the "box" part and "head part" to simplify the printing process, and gluing the head onto the chassis later.
 
+After printing, we recommend adding some rubber on the wheels to increase friction. 
+We found that using a snitched part of inner bike tube and just pulling it over the wheel provides enough friction and does not move around.
+
 ### Export to .xml
 In the Fusion assembly, we model each electrical component, and roughly position it to where it is located in the robot.
-We then use Fusion's physical materials to set the correct weight to each part, which helps to reduce the sim-to-real gap significantly.
+We then use Fusion's physical materials to set the correct weight to each part (don't forget about the 3D printed ones), which helps to reduce the sim-to-real gap significantly.
 Fusion does not allow changing the weight directly, so instead you have to inspect the part's volume (right click and pick *properties*), and calculate the density needed to achieve the desired weight.
+
+While you may be able to get by with modelling the whole robot as a box and 2 cylinders for the wheels, this helps to reduce the sim-to-real gap significantly.
+
+We use Fusion's add-in [ACDC4Robot](https://github.com/bionicdl-sustech/ACDC4Robot) to export the model to MuJoCo's .xml format.
+
+Before exporting, organize the assembly into three top-level components, `base`, `right_wheel` and `left_wheel`, and connect each wheel to the base with a revolute joint.
+That means that you have to copy over each body into the `base` component, and deleting every other component apart from the wheels. 
+Don't forget to delete the prismatic joint joining the top and bottom chassis.
+Each component becomes a body in the MuJoCo model, and each joint becomes a hinge.
+
+<p align="center">
+  <img src="docs/imgs/export_browser.png" alt="Fusion browser showing the base, right_wheel and left_wheel components" width="300">
+</p>
+
+Then open the add-in from the *Utilities* tab under *Add-ins* → *ACDC4Robot*.
+
+<p align="center">
+  <img src="docs/imgs/ACDC4Robot.png" alt="ACDC4Robot add-in in the Fusion Utilities tab" width="600">
+</p>
+
+In the dialog, set *Robot Description Format* to **MJCF** and *Simulation Environment* to **MuJoCo**, then click *OK* and choose an output folder.
+
+<p align="center">
+  <img src="docs/imgs/export_choice.png" alt="ACDC4Robot dialog with MJCF and MuJoCo selected" width="250">
+</p>
